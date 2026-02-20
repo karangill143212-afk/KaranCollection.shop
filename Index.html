@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Brand Name</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header>
+  <nav class="navbar">
+    <div class="logo">YOUR BRAND</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#collections">Collections</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-icons">
+      <i class="fas fa-moon" id="theme-toggle"></i>
+      <i class="fas fa-shopping-bag"></i>
+      <span id="cart-count">0</span>
+    </div>
+  </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1>Elevate Your Streetwear</h1>
+    <p>Minimal. Bold. Premium.</p>
+    <a href="#shop" class="btn">Shop Now</a>
+  </div>
+</section>
+
+<!-- ================= SHOP ================= -->
+<section id="shop" class="shop section">
+  <h2>Shop Collection</h2>
+
+  <div class="filter-buttons">
+    <button onclick="filterProducts('all')">All</button>
+    <button onclick="filterProducts('men')">Men</button>
+    <button onclick="filterProducts('women')">Women</button>
+    <button onclick="filterProducts('unisex')">Unisex</button>
+  </div>
+
+  <div class="product-grid">
+
+    <!-- Product Card -->
+    <div class="product-card men">
+      <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab" alt="">
+      <h3>Essential Black Tee</h3>
+      <p>$39</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product-card women">
+      <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b" alt="">
+      <h3>Beige Crop Hoodie</h3>
+      <p>$59</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product-card unisex">
+      <img src="https://images.unsplash.com/photo-1544441893-675973e31985" alt="">
+      <h3>Luxury Oversized Hoodie</h3>
+      <p>$89</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product-card men">
+      <img src="https://images.unsplash.com/photo-1503341504253-dff4815485f1" alt="">
+      <h3>Street Cargo Pants</h3>
+      <p>$79</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product-card women">
+      <img src="https://images.unsplash.com/photo-1495121605193-b116b5b09a6b" alt="">
+      <h3>Minimal White Shirt</h3>
+      <p>$49</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product-card unisex">
+      <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f" alt="">
+      <h3>Premium Jacket</h3>
+      <p>$129</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product-card men">
+      <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38" alt="">
+      <h3>Classic Denim</h3>
+      <p>$99</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product-card women">
+      <img src="https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93" alt="">
+      <h3>Streetwear Set</h3>
+      <p>$109</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= COLLECTIONS ================= -->
+<section id="collections" class="section collections">
+  <h2>Featured Collection</h2>
+  <div class="featured-banner">
+    <h3>Winter Drop 2026</h3>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section about">
+  <h2>About Us</h2>
+  <p>Your Brand is built for the bold generation. Inspired by minimal streetwear aesthetics, our mission is to blend luxury with everyday comfort.</p>
+  <p><strong>Mission:</strong> Redefining modern street fashion with premium essentials.</p>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section contact">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <div class="social-icons">
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-facebook"></i>
+    <i class="fab fa-twitter"></i>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="footer-content">
+    <p>© 2026 Your Brand Name. All rights reserved.</p>
+    <div class="newsletter">
+      <input type="email" placeholder="Subscribe to Newsletter">
+      <button>Subscribe</button>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
